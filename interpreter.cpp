@@ -1178,7 +1178,8 @@ int main (int argc, char const *argv[] )
 
         // prepare arg1: des, and arg2: src for commands that take two args.
         // tokanizing the args
-        string theArgs[2]; // to hold arg1, arg2
+        // to hold arg1, arg2
+        string theArgs[2];
         string s = args;
         istringstream ss(s);
         size_t i = 0;
@@ -1187,7 +1188,8 @@ int main (int argc, char const *argv[] )
           string x;
           getline( ss, x, ',' );
           if ( x == "" ) continue;
-          theArgs[i] = trimChars(x,' '); // theArgs[0] = des, theArgs[1] = src
+          // theArgs[0] = des, theArgs[1] = src
+          theArgs[i] = trimChars(x,' ');
           i++;
         }
         des = theArgs[0];
