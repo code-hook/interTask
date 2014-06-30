@@ -624,7 +624,7 @@ void printReg ( Reg &reg )
     }
 }
 
-bool isCmdInList ( vector <string> &cmd_list, string cmd )
+bool isCmdInList ( vector <string> &cmd_list, string &cmd )
 {
     vector <string>::iterator result;
     result = find(cmd_list.begin(), cmd_list.end(), cmd );
